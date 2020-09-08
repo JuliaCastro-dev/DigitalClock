@@ -1,0 +1,43 @@
+<!Doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Clock</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript">
+        function clock(){
+            var Hours = document.getElementById('hours');
+            var Minutes = document.getElementById('minutes');
+            var Seconds = document.getElementById('seconds');
+
+            var hoje = new Date;
+            var h = hoje.getHours();
+            var m = hoje.getMinutes();
+            var s = hoje.getSeconds();
+
+            Hours.innerHTML = h;
+            minutes.innerHTML = m;
+            seconds.innerHTML = s;
+
+        }
+
+        var interval = setInterval(clock, 1000);
+        function para(){
+
+            clearInterval(interval);
+        }
+        </script>
+</head>
+<body>
+    <div id="clock">
+        <h2>The Time is now</h2>
+        <div id="time">
+            <div><span id="hours">00</span><span>Hours</span></div>
+            <div><span id="minutes">00</span><span>Minutes</span></div>
+            <div><span id="seconds">00</span><span>Seconds</span></div>
+            <input  type="button"  value="Stop" onClick="para()"/>
+        </div>
+       
+    </div>
+</body>
+</html>
