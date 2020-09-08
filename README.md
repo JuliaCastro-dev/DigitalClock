@@ -1,3 +1,3 @@
 # DigitalClock
 Relógio digital
-utilizado javascript , Html e css.
+utilizado javascript, Html e css.
